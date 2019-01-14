@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Belajar Else If</title>
+</head>
+<body>
+<h1> Belajar Else If pada console.log </h1>
+
+<script> 
+var jumlahsiswa = 10,
+	siswahadir = 7,
+	siswaizin = 8;
+
+for (s = 1; s <= jumlahsiswa; s++ ) {
+
+	if (s <= siswahadir) {
+		console.log("Siswa dengan no absen " + s + " hadir");
+	}else if (s === siswaizin){
+		console.log("Siswa dengan no absen " + s + " izin karena ada kegiatan JAMBORE");
+	} else {
+		console.log("Siswa dengan no absen " + s + " tanpa keterangan");
+	}
+}
+</script>
+</body>
+</html>
