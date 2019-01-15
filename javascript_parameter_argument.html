@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Belajar Parameter Dan Argument </title>
+</head>
+<body>
+<h1> Belajar Parameter Dan Argument </h1>
+
+<script>
+
+function pertambahan() {
+	hasil = 0;
+	for (var a = 0; a < arguments.length; a++){
+	hasil += arguments[a];
+		}
+return hasil;
+
+}
+
+var tes = pertambahan(7,9,8,6,5);
+console.log(tes);
+
+</script>
+</body>
+</html>
