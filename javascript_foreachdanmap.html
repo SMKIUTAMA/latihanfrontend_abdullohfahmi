@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Belajar Foreach Dan Map </title>
+</head>
+<body>
+<h1> Belajar foreach dan map </h1>
+
+
+<script>
+
+//forEach
+
+var n = [1,2,3,4,5,6,7,8,9,10];
+var a = ['Abdul','Fahmi','Danang','Septi'];
+
+a.forEach(function(m, o){
+	console.log("Mahasiswa dengan nomor absen ke-" + (o+1) + " adalah: " + m);
+})
+
+
+//map 
+//dapat mengembalikan nilai 
+var c = [2,6,7,9,8,4,];
+var n = c.map(function(r){
+	return r * 2;
+
+})
+
+console.log(n.join(', '));
+
+//sort
+
+var angka = [4,2,6,7,3,8,0];
+angka.sort();
+console.log(angka.join(', '));
+</script>
+</body>
+</html>
