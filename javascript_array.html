@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Belajar Array </title>
+</head>
+<body>
+	<h1> Belajar Array pada Console.log </h1>
+
+<script>
+
+//Menambahkan array 
+
+var array = [];
+array[0] = 'Kucing';
+array[1] = ['Anggora','Persia','Garong'];
+array[2] = 'Anjing';
+array[3] = 'Ayam';
+array[4] = 'Kelinci';
+
+console.log(array[1][2]);
+
+
+// Menghapus array 
+
+var array2 = ['Kucing','Anjing','Ayam','Kelinci'];
+array2[2] = undefined;
+
+console.log(array2);
+
+
+//Menampilkan isi array
+
+var array3 = ['Kucing','Anjing','Ayam','Kelinci','Biawak'];
+
+for (var h = 0; h < array3.length; h++) {
+	console.log("Pada Kandang no " + (h+1) + " terisi oleh " + array3[h]);
+}
+
+
+//Menggunakan METHOD pada array
+//Join 
+
+var array4 = ['Fahmi', 'Wahyu', 'Septi', 'Danang', 'Kevin'];
+console.log(array4.join(", "));
+
+
+//Push and Pop
+
+//pop
+//Menghilangkan array pada bagian terakhir
+//Bisa lebih dari satu 
+array4.pop();
+console.log(array4.join(", "));
+
+//push
+//menambahkan array di bagian akhir
+//Hanya bisa satu persatu
+array3.push('Kuda','Jerapah');
+console.log(array3.join(", "));
+
+//unshift & shift 
+//bekerja pada elemen pertama
+//UNSHIFT
+
+var array5 = ['Lemari','Kasur','Dispenser','Meja'];
+
+array5.unshift('Kursi');
+console.log(array5.join(", "));
+
+//SHIFT
+
+array5.shift();
+console.log(array5.join(", "));
+
+</script>
+</body>
+</html>
