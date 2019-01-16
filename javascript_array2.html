@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Belajar Array 2 </title>
+</head>
+<body>
+<h2> Belajar array method </h2>
+
+<script> 
+
+//splice
+//Menambahkan string ditengah array
+
+var array =  ['Fahmi', 'Wahyu', 'Septi', 'Danang', 'Kevin'];
+
+//RUMUS
+//(indexawal, maudihapusberapa, elemenbaru1, elemenbaru2,.....)
+
+array.splice(2, 0, 'Abdul');
+console.log(array.join(', '));
+
+//slice
+//Memotong array dari tengah
+var array2 =  ['Fahmi', 'Wahyu', 'Septi', 'Danang', 'Kevin'];
+
+//RUMUS
+//(Awal, Akhir)
+
+var array3 = array2.slice(2, 4);
+
+console.log(array3.join(', ')); 
+
+</script>
+</body>
+</html>
