@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Tugas javascript </title>
+</head>
+<body> 
+	<h2> Bilangan Prima </h2>
+<script>
+
+// Tugas Javascript Pertama 
+
+function BilanganPrima( p ) {
+    var maksimal = Math.sqrt(p);
+    for( var i = 2;  i <= maksimal;  i++ ) {
+        if( p % i == 0 )
+            return false;
+    }
+    return true;
+}
+
+for( var p = 2;  p < 120;  p++ ) {
+        if( BilanganPrima(p) ) {
+  document.write( p + '<br>' );
+ }
+}
+
+document.write("<br>" + "Bilangan Fibonacci" + "<br>")
+//Kedua
+//Bilangan Fibonacci
+
+	var b = 0,
+		c = 1,
+		a = 1;
+
+	for(var i = 0; i < 100; i++){
+		a = b+c;
+		c = b;
+		b = a;
+		document.write(a + "<br>");
+
+	}
+
+
+
+</script>
+
+</body>
+</html>
