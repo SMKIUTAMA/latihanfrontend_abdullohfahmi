@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Data Nilai Mahasiswa </title>
+</head>
+<body>
+
+
+<script> 
+
+var tanya = true;
+
+while (tanya) {
+
+//Memeriksa nama mahasiswa
+
+var nama = prompt("Masukkan Nama Mahasiswa: ");
+
+//Menampilkan presentase nilai
+
+var nilai1 = prompt("Masukkan Nilai Absen :" + "\nNilai 1-100"),
+	nilai2 = prompt("Masukkan Nilai Tugas :" + "\nNilai 1-100"),
+	nilai3 = prompt("Masukkan Nilai UTS :" + "\nNilai 1-100"),
+	nilai4 = prompt("Masukkan Nilai UAS :" + "\nNilai 1-100");
+
+
+
+var tambah = nilai1 * 0.1 + nilai2 * 0.2 + nilai3 * 0.3 + nilai4 * 0.4;
+
+if(tambah >= 80 && tambah <= 100) {
+	alert("Nilai Absen: " + nilai1 + "\nNilai Tugas: " + nilai2 + "\nNilai UTS: " + nilai3 + "\nNilai UAS: " + nilai4 + "\nTotal Nilai Anda: " + tambah + "\nSelamat anda mendapatkan nilai A" );
+} else if(tambah < 80 && tambah >= 70  ){
+	alert("Nilai Absen: " + nilai1 + "\nNilai Tugas: " + nilai2 + "\nNilai UTS: " + nilai3 + "\nNilai UAS: " + nilai4 + "\nTotal Nilai Anda: " + tambah + "\nMemuaskan, anda mendapatkan nilai B" );
+} else if(tambah < 70 && tambah >= 60){
+	alert("Nilai Absen: " + nilai1 + "\nNilai Tugas: " + nilai2 + "\nNilai UTS: " + nilai3 + "\nNilai UAS: " + nilai4 + "\nTotal Nilai Anda: " + tambah + "\nLumayan, anda mendapatkan nilai C" );
+} else if(tambah < 60 && tambah >= 50){
+	alert("Nilai Absen: " + nilai1 + "\nNilai Tugas: " + nilai2 + "\nNilai UTS: " + nilai3 + "\nNilai UAS: " + nilai4 + "\nTotal Nilai Anda: " + tambah + "\nKurang beruntung, anda mendapatkan nilai D" );
+} else if(tambah < 50 && tambah >= 0 ){
+	alert("Nilai Absen: " + nilai1 + "\nNilai Tugas: " + nilai2 + "\nNilai UTS: " + nilai3 + "\nNilai UAS: " + nilai4 + "\nTotal Nilai Anda: " + tambah + "\nAnda perlu belajar lagi, anda mendapatkan nilai E" );
+} else {
+	alert("Anda memasukkan nilai yang salah" );
+}
+
+
+tanya=confirm("Masukkan Nilai Lagi?");
+}
+alert("Terimakasih");
+</script> 
+</body>
+</html>
