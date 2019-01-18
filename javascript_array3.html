@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Belajar Array 3</title>
+</head>
+<body>
+<h2> Belajar Filter & Find </h2>
+
+<script>
+
+//Filter
+//bisa lebih dari satu elemen
+
+	var array = [3,5,7,2,8,9,6];
+	var array2 = array.filter(function(n){
+			return n < 8;
+	})
+
+
+	console.log(array2.join(", "));
+
+//Find
+//Hanya bisa satu elemen
+
+var array3 = [6,7,4,3,2,5,9];
+var array4 = array.find(function(f){
+			return f > 4;
+
+
+})
+
+console.log(array4);
+</script>
+</body>
+</html>
