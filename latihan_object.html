@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Latihan OBJECT</title>
+  </head>
+  <body>
+    <h2> Belajar object || Pengelolaan Metro Mini </h2>
+
+    <script>
+
+      function Metromini (sopir, trayek, penumpang, kas){
+        this.sopir = sopir;
+        this.trayek = trayek;
+        this.penumpang = penumpang;
+        this.kas = kas;
+
+
+        this.penumpangNaik = function (namapenumpang){
+          this.penumpang.push(namapenumpang);
+          return this.penumpang;
+          }
+
+          this.penumpangTurun = function (namapenumpang, bayar){
+
+            if (this.penumpang.length == 0){
+              console.log("Metromini masih kosong");
+              return false;
+            }
+
+            for (var p = 0; p < this.penumpang.length; p++ ){
+              if (this.penumpang[p] == namapenumpang){
+                  this.penumpang[p] = undefined;
+                  this.kas += bayar;
+                  return this.penumpang;
+                } else if (p == this.penumpang.length - 1){
+                  console.log (namapenumpang + ' tidak ada di dalam metromini');
+                }
+            }
+
+
+            }
+
+              }
+              var metromini1 = new Metromini ('Danang', ['Cidomba, Cikambing'], [], 0);
+              var metromini2 = new Metromini ('Tarjono' ['Cibubur, Cinasgor'], [], 0);
+
+
+    </script>
+  </body>
+</html>
